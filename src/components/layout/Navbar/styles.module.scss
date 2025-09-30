@@ -1,0 +1,16 @@
+.navButton {
+    text-transform: none;
+
+    &:hover {
+        background-color: transparent !important;
+        background: transparent !important;
+    }
+}
+
+.navButtonText {
+    border-bottom: 0px solid transparent;
+    &:hover {
+        border-bottom: 1px solid #000000 !important;
+        transition: border-bottom 0.5s ease-in-out !important; //did not worked
+    }
+}
