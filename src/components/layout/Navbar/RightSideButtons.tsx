@@ -1,10 +1,11 @@
-import { Box, Button, IconButton, Typography } from "@mui/material";
+import { Box, Button, IconButton } from "@mui/material";
 import Badge, { badgeClasses } from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 
+import { getMessages } from "@/i8n";
 import ArrowRightIcon from "@mui/icons-material/ArrowRightAlt";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import PersonIcon from "@mui/icons-material/Person";
+import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 
 const CartBadge = styled(Badge)`
   & .${badgeClasses.badge} {
@@ -12,7 +13,6 @@ const CartBadge = styled(Badge)`
     right: -6px;
   }
 `;
-import { getMessages } from "@/i8n";
 export const RightSideButtons = () => {
   return (
     <Box sx={{ display: "flex", gap: 2 }}>

@@ -1,0 +1,1 @@
+export { default as NavbarProducts } from "./NavbarProducts";

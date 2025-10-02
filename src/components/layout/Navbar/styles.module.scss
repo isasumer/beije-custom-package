@@ -9,8 +9,60 @@
 
 .navButtonText {
     border-bottom: 0px solid transparent;
+
     &:hover {
         border-bottom: 1px solid #000000 !important;
         transition: border-bottom 0.5s ease-in-out !important; //did not worked
+    }
+}
+
+.appBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    position: relative;
+    color: #ffffff;
+    background-color: #ffffff!important;
+    .toolbar{
+        max-width: 1400px;
+    }
+}
+
+.drawerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid blue;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.318);
+    background-color: #ffffff;
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(-540px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: -1;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+    padding-top: 80px;
+    &.drawerMenuOpen {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    &.drawerMenuClose {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-540px);
+        pointer-events: none;
     }
 }
