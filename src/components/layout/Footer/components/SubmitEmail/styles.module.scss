@@ -1,0 +1,21 @@
+.submitEmail {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 50%;
+
+    &Wrapper {
+        display: flex;
+        gap: 16px;
+    }
+
+    &Input {
+        margin: 16px 0;
+        border: 1px solid #808080;
+        border-radius: 8px;
+        width: 50%;
+        input {
+            padding: 6px 12px;
+        }
+    }
+}

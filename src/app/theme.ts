@@ -9,6 +9,20 @@ const theme = createTheme({
     secondary: {
       main: "#000000",
     },
+    background: {
+      paper: '#262626',
+      default: '#f9f5f2',
+    },
+    text: {
+      primary: '#ffffff',
+      secondary: '#ffffffb2',
+    },
+    action: {
+      active: '#001E3C',
+    },
+    success: {
+      main: '#009688',
+    },
   },
 
   components: {

@@ -1,7 +1,6 @@
 import { Box, Button, IconButton } from "@mui/material";
 import Badge, { badgeClasses } from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
-
 import { getMessages } from "@/i8n";
 import ArrowRightIcon from "@mui/icons-material/ArrowRightAlt";
 import PersonIcon from "@mui/icons-material/Person";
