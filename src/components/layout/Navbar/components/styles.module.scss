@@ -1,12 +1,27 @@
-.productsContainer{
+.productsContainer,
+.aboutUsContainer {
     max-width: 1020px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 24px;
     padding: 48px;
     border-radius: 12px;
     width: 100%;
     height: 100%;
+}
 
+.aboutUsContainer {
+    padding: 24px 48px;
+    flex-direction: column;
+    gap: 12px;
+    .aboutUsQuickLinks {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.aboutUsItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

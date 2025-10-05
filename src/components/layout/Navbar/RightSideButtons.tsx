@@ -21,7 +21,7 @@ export const RightSideButtons = () => {
       </Button>
       <IconButton color="secondary" aria-label="add to shopping cart">
         <ShoppingBasketIcon />
-        <CartBadge badgeContent={2} color="secondary" overlap="circular" />
+        <CartBadge badgeContent={0} color="secondary" overlap="circular" />
       </IconButton>
 
       <IconButton color="secondary" aria-label="add to shopping cart">

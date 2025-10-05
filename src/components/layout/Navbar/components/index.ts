@@ -1,1 +1,2 @@
-export { default as NavbarProducts } from "./NavbarProducts";
+export { default as Products } from "./Products";
+export { default as Quicklinks } from "./Quicklinks";

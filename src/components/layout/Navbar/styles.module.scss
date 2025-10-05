@@ -1,33 +1,32 @@
-.navButton {
-    text-transform: none;
-
-    &:hover {
-        background-color: transparent !important;
-        background: transparent !important;
-    }
-}
-
-.navButtonText {
-    border-bottom: 0px solid transparent;
-
-    &:hover {
-        border-bottom: 1px solid #000000 !important;
-        transition: border-bottom 0.5s ease-in-out !important; //did not worked
-    }
-}
-
 .appBar {
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     position: relative;
     color: #ffffff;
-    background-color: #ffffff!important;
+    background-color: #ffffff !important;
     overflow: visible;
-    .toolbar{
+
+    .toolbar {
         max-width: 1400px;
+    }
+    .navButton {
+        text-transform: none;
+    
+        &:hover {
+            background-color: transparent !important;
+            background: transparent !important;
+        }
+    }
+    
+    .navButtonText {
+        border-bottom: 0px solid #000000;
+    
+        &:hover {
+            border-bottom-width: 1px !important;
+            transition: border-bottom 0.5s ease-in-out !important; 
+        }
     }
 }
 
@@ -40,7 +39,6 @@
     left: 0;
     width: 100%;
     height: fit-content;
-    border: 1px solid blue;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.318);
     background-color: #ffffff;
     opacity: 0;
@@ -50,6 +48,7 @@
     transition: opacity 0.2s ease, transform 0.2s ease;
     z-index: -1;
     padding-top: 80px;
+
     &.drawerMenuOpen {
         opacity: 1;
         visibility: visible;
@@ -63,5 +62,30 @@
         visibility: hidden;
         transform: translateY(-40px);
         pointer-events: none;
+    }
+}
+
+.warningAnimation {
+    order:3;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(14, 185, 179);
+    margin-left: 4px;
+    margin-bottom: 4px;
+    align-self: center;
+    animation: 2s ease 0s infinite normal none running pulse;
+
+}
+
+@keyframes pulse {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
