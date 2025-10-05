@@ -4,9 +4,9 @@ import * as React from "react";
 import Image from "next/image";
 import { RightSideButtons } from "./RightSideButtons";
 import NavbarMenuItems, { menuItems } from "./NavbarMenuItems";
-import { AppBar, Toolbar, Link , Box} from "@mui/material";
+import { AppBar, Toolbar, Link, Box } from "@mui/material";
 import { useMemo, useState } from "react";
-import styles from "./styles.module.scss"
+import styles from "./styles.module.scss";
 
 export function Navbar() {
   const [anchorEl, setAnchorEl] = useState<string | null>(null);
@@ -31,8 +31,9 @@ export function Navbar() {
         <RightSideButtons />
       </Toolbar>
       <Box
-        className={`${styles.drawerMenu} ${activeItem ? styles.drawerMenuOpen : styles.drawerMenuClose}`}
-        onMouseEnter={() => activeItem && setAnchorEl(activeItem.key)}
+        className={`${styles.drawerMenu} ${
+          activeItem ? styles.drawerMenuOpen : styles.drawerMenuClose
+        }`}
       >
         {activeItem?.component}
       </Box>

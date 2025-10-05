@@ -17,6 +17,7 @@
 }
 
 .appBar {
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +25,7 @@
     position: relative;
     color: #ffffff;
     background-color: #ffffff!important;
+    overflow: visible;
     .toolbar{
         max-width: 1400px;
     }
@@ -41,28 +43,25 @@
     border: 1px solid blue;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.318);
     background-color: #ffffff;
-    opacity: 1;
+    opacity: 0;
     visibility: hidden;
-    transform: translateY(-540px);
+    transform: translateY(-40px);
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
     z-index: -1;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
     padding-top: 80px;
     &.drawerMenuOpen {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
         pointer-events: auto;
+        z-index: -1;
     }
 
     &.drawerMenuClose {
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-540px);
+        transform: translateY(-40px);
         pointer-events: none;
     }
 }
