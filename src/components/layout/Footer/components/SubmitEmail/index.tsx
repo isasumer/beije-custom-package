@@ -15,7 +15,7 @@ export default function SubmitEmail() {
       <Typography variant="subtitle2" color="text.secondary">
         {getMessages("035")}
       </Typography>
-      <Box className={styles.submitEmailWrapper}>
+      <Box className={styles.submitEmailWrapper} >
         <Input placeholder={getMessages("037")}  className={styles.submitEmailInput}/>
         <Button variant="contained" color="primary">
           {getMessages("038")}

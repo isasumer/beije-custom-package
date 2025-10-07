@@ -1,10 +1,11 @@
 import { Box, Button, IconButton } from "@mui/material";
-import Badge, { badgeClasses } from '@mui/material/Badge';
-import { styled } from '@mui/material/styles';
+import Badge, { badgeClasses } from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
 import { getMessages } from "@/i8n";
 import ArrowRightIcon from "@mui/icons-material/ArrowRightAlt";
 import PersonIcon from "@mui/icons-material/Person";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import Link from "next/link";
 
 const CartBadge = styled(Badge)`
   & .${badgeClasses.badge} {
@@ -15,9 +16,18 @@ const CartBadge = styled(Badge)`
 export const RightSideButtons = () => {
   return (
     <Box sx={{ display: "flex", gap: 2 }}>
-      <Button variant="outlined" endIcon={<ArrowRightIcon />} color="secondary" size="medium" sx={{ fontWeight: "600" }}>
-        {getMessages("005")}
-      </Button>
+      <Link href="/custom-packet">
+        {" "}
+        <Button
+          variant="outlined"
+          endIcon={<ArrowRightIcon />}
+          color="secondary"
+          size="medium"
+          sx={{ fontWeight: "600" }}
+        >
+          {getMessages("005")}
+        </Button>
+      </Link>
       <IconButton color="secondary" aria-label="add to shopping cart">
         <ShoppingBasketIcon />
         <CartBadge badgeContent={0} color="secondary" overlap="circular" />
