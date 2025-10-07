@@ -31,6 +31,9 @@ export interface IProductSubProduct {
     product_id: string;
     iconSr: string;
     backgroundColor: string;
+    maxQuantity: number;
+    quantityIncrement: number;
+    price: number;
 }
 
 

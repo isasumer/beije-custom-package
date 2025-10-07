@@ -1,11 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import { QuantitySelection } from "../../../../UI";
 import Image from "next/image";
+import { IProductSubProduct } from '@/entities/products';
 
 export default function CustomProductSelection({
-  backgroundColor,
-  icon,
-  title,
+  mainProductId,
+  subProduct,
 }: ICustomProductSelectionProps) {
   return (
     <Box
@@ -24,25 +24,24 @@ export default function CustomProductSelection({
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "center",
-            backgroundColor: backgroundColor,
+            backgroundColor: subProduct.backgroundColor,
             borderRadius: "4px",
             padding: "2px 4px",
             width: "64px",
           }}
         >
-          <Image src={icon} alt={title} width={20} height={20} />
+          <Image src={subProduct.iconSr} alt={subProduct.product} width={20} height={20} />
         </Box>
         <Typography variant="body1" fontWeight="bold">
-          {title}
+          {subProduct.product}
         </Typography>
       </Box>
-      <QuantitySelection />
+      <QuantitySelection mainProductId={mainProductId} subProduct={subProduct} />
     </Box>
   );
 }
 
 interface ICustomProductSelectionProps {
-  backgroundColor: string;
-  icon: string;
-  title: string;
+  mainProductId: string;
+  subProduct: IProductSubProduct;
 }

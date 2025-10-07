@@ -59,7 +59,7 @@ export const enMessages = {
     "059": "Your Special Package",
     "060": "Every 2 months",
     "061": "You can create your own package by adding your preferred amount of Pads, Pantyliners, Tampons and other supporting products to meet your personal needs.",
-    "062": "Add to Basket (₺0.00)",
+    "062": "Add to Basket",
     "063": "You can use the Heating Patch for both muscle pain and menstrual cramps.",
     "064": "One bottle of Cycle Essentials contains 32 capsules, enough for two cycles.",
     "065": "One bottle of Cranberry Essentials contains 30 capsules made entirely from vegan ingredients.",

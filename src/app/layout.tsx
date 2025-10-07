@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout";
 import { Footer } from "@/components/layout";
 import { ThemeWrapper } from '@/components/layout/ThemeWrapper';
+import StoreProvider from './StoreProvider';
 
 
 export const metadata: Metadata = {
@@ -19,13 +20,15 @@ export default function RootLayout({
     <html lang="en">
       <body >
           <ThemeWrapper>
-          <div className="container">
-            <Navbar />
-            <div className="content">
-              {children}
+          <StoreProvider>
+            <div className="container">
+              <Navbar />
+              <div className="content">
+                {children}
+              </div>
+              <Footer />
             </div>
-            <Footer />
-          </div>
+          </StoreProvider>
         </ThemeWrapper>
       </body>
     </html>

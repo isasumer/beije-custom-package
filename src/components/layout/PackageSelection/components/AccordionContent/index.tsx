@@ -13,10 +13,9 @@ export default function AccordionContent({
       {product.description && <ProductDescription description={product.description} />}
       {product.sub_products.map((sub_product) => (
         <CustomProductSelection
-          backgroundColor={sub_product.backgroundColor}
-          icon={sub_product.iconSr}
-          title={sub_product.product}
-          key={sub_product.product_id}
+          mainProductId={product.main_product_id}
+          subProduct={sub_product}
+key={sub_product.product_id}
         />
       ))}
     </Box>
