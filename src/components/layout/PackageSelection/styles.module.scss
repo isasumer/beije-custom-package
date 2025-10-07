@@ -1,0 +1,20 @@
+.tabListContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.294);
+}
+.tabPanel{
+    padding: 24px 0!important;
+}
+
+.tabList {
+    width: 100%;
+    button {
+        width: 50%;
+    }
+    :global(.MuiTabs-indicator) {
+        background-color: transparent;
+    }
+
+    :global(.MuiTab-root.Mui-selected) {
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+}

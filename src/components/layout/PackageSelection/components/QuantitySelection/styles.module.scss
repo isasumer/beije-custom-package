@@ -1,0 +1,25 @@
+.quantitySelection {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 16px;
+    height: 48px;
+    border: 1px solid rgba(0, 0, 0, 0.294);
+    border-radius: 33px;
+
+    .button {
+        width: 48px;
+        height: 48px;
+        border-radius: 33px;
+        border: none;
+    }
+
+    .value {
+        margin: 0px;
+        line-height: 1.625rem;
+        letter-spacing: -0.01em;
+        font-variant-numeric: tabular-nums;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

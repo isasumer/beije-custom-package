@@ -5,6 +5,7 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#FFFFFF",
+      light: "#0009",
     },
     secondary: {
       main: "#000000",
@@ -29,10 +30,39 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#f9f5f2',
+          backgroundColor: '',
           boxShadow: 'none',
           padding: '16px 0',
         },
+      },
+    },
+
+    MuiTab: {
+      styleOverrides: {
+        root: {
+
+          textTransform: 'none',
+          fontSize: '16px',
+          fontWeight: 'bold',
+          color: '#0009',
+          '&.Mui-selected': {
+            color: '#000000',
+          },
+        },
+
+      },
+    },
+
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'white',
+          color: '#000000e6',
+          fontSize: '16px',
+          fontWeight: 'bold',
+          border: 'none',
+        },
+
       },
     },
 

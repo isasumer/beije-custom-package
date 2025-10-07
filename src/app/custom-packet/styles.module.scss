@@ -8,8 +8,6 @@
     border: 1px solid red;
     &Container {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
         -webkit-box-pack: justify;
         justify-content: space-between;
         padding: 0px;

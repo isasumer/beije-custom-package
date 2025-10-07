@@ -1,0 +1,30 @@
+.specialPackage {
+    max-width: 520px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 36px;
+    background: rgb(255, 255, 255);
+    width: 466px;
+    border-radius: 16px;
+}
+
+.specialPackageChip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #0eb9b31a;
+    border-radius: 8px;
+    padding: 4px;
+    min-width: 140px;
+    
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    background-color: #0eb9b3;
+    border-radius: 50%;
+}

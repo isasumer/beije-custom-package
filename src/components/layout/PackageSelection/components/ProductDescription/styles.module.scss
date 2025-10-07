@@ -1,0 +1,11 @@
+.productDescription {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px 16px;
+
+    background-color: rgb(236, 241, 207);
+    border-radius: 8px;
+}

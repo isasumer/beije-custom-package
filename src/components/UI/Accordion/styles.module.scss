@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  background: #ffffff;
+
+  &:before {
+    display: none;
+  }
+
+  &.Mui-expanded {
+    margin: 0 0 16px 0;
+  }
+}
+
+.summary {
+  padding: 8px 16px!important;
+
+  .MuiAccordionSummary-content {
+    margin: 0;
+  }
+}
+
+.summaryContent {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.subtitle {
+  color: rgba(29, 29, 31, 0.6);
+}
+
+.details {
+  padding: 0 24px 24px 24px;
+  color: rgba(29, 29, 31, 0.8);
+  font-size: 14px;
+  line-height: 1.6;
+}
