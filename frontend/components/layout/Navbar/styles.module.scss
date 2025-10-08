@@ -9,27 +9,38 @@
     overflow: visible;
 
     .toolbar {
+        display: flex;
+        gap: 32px;
+        align-items: center;
         max-width: 1480px;
+        width: 100%;
     }
+
+
+
     .navButton {
         text-transform: none;
-    
+
         &:hover {
             background-color: transparent !important;
             background: transparent !important;
         }
     }
-    
+
     .navButtonText {
         border-bottom: 0px solid #000000;
-    
+
         &:hover {
             border-bottom-width: 1px !important;
-            transition: border-bottom 0.5s ease-in-out !important; 
+            transition: border-bottom 0.5s ease-in-out !important;
         }
     }
 }
-
+.navbarMenuItems {
+    display: flex;
+    flex-grow: 1;
+    gap: 1;
+}
 .drawerMenu {
     display: flex;
     justify-content: center;
@@ -66,7 +77,7 @@
 }
 
 .warningAnimation {
-    order:3;
+    order: 3;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -80,12 +91,40 @@
 
 @keyframes pulse {
     0% {
-        opacity:0;
+        opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
+    }
+}
+
+
+
+//add media query for 852px
+@media (max-width: 940px) {
+    .customPacketButton{
+        display: none;
+    }
+    .toolbar{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 756px) {
+
+    .navbarMenuItems {
+        width: 100%;
+        display: none;
+    }
+}
+@media (max-width: 600) {
+
+    .toolbar{
+        width: 100%;
+        padding: 0 16px!important;
     }
 }

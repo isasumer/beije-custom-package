@@ -6,6 +6,7 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRightAlt";
 import PersonIcon from "@mui/icons-material/Person";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import Link from "next/link";
+import styles from "./styles.module.scss";
 
 const CartBadge = styled(Badge)`
   & .${badgeClasses.badge} {
@@ -16,7 +17,7 @@ const CartBadge = styled(Badge)`
 export const RightSideButtons = () => {
   return (
     <Box sx={{ display: "flex", gap: 2 }}>
-      <Link href="/custom-packet">
+      <Link href="/custom-packet" className={styles.customPacketButton}>
         {" "}
         <Button
           variant="outlined"

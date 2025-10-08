@@ -13,3 +13,19 @@
         gap: 7.625rem;
     }
 }
+
+@media (max-width: 1024px) {
+    .customPacketContainer {
+        gap: 2rem;
+    }
+}
+@media (max-width: 900px) {
+    .customPacketContainer {
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .customPacketContainer {
+        flex-direction: column;
+    }
+}

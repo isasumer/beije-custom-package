@@ -26,3 +26,17 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 940px) {
+    .bottomLinks {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 440px) {
+    .bottomLinksList {
+        gap: 8px;
+        flex-direction: column;
+    }
+}

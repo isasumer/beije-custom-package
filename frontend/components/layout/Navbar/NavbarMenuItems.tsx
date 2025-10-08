@@ -16,7 +16,9 @@ export default function NavbarMenuItems({
   }
 
   return (
-    <Box sx={{ flexGrow: 1, display: "flex", gap: 1 }}>
+    <Box
+      className={styles.navbarMenuItems}
+    >
       {menuItems.map((item) => (
         <Button
           key={item.key}

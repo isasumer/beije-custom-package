@@ -23,7 +23,7 @@ export function Navbar() {
       className={styles.appBar}
       onMouseLeave={() => setAnchorEl(null)}
     >
-      <Toolbar sx={{ display: "flex", gap: 2, alignItems: "center" }}>
+      <Toolbar className={styles.toolbar}>
         <Link href="/">
           <Image src="/logo.svg" alt="Beije" width={56} height={24} />
         </Link>
