@@ -17,7 +17,6 @@ export default function ProducsTab() {
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue as ProductType);
-    console.log(newValue);
   };
 
   return (
