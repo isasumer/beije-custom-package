@@ -1,3 +1,5 @@
+![alt-text](https://github.com/isasumer/beije-custom-package/blob/master/demo-beije-gif.gif)
+
 # Beije Custom Packet
 
 A full-stack application for creating and managing custom menstrual product subscription packages. Built with modern web technologies, this platform provides an intuitive interface for users to personalize their monthly deliveries.
