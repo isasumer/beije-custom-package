@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/layout";
 import { Footer } from "@/components/layout";
-import { ThemeWrapper } from '@/components/layout/ThemeWrapper';
+import { ThemeWrapper } from '@/components/layout/ThemeWrapper/index';
 import StoreProvider from './StoreProvider';
 
 
