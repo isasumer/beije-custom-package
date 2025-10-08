@@ -1,7 +1,7 @@
 export default () => ({
   app: {
-    port: parseInt(process.env.PORT || '3001', 10),
-    baseUrl: process.env.APP_BASE_URL || 'http://localhost:3001',
+    port: parseInt(process.env.PORT || '8080', 10),
+    baseUrl: process.env.APP_BASE_URL || 'http://localhost:8080',
   },
   database: {
     path: process.env.DB_PATH || 'data.sqlite',
