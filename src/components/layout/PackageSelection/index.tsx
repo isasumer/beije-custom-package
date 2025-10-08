@@ -3,7 +3,7 @@ import Header from "./Header";
 import ProductsTab from "./ProducsTab";
 export function PackageSelection() {
   return (
-    <Box sx={{ maxWidth: "520px" }}>
+    <Box sx={{ maxWidth: "500px" }}>
       <Header />
       <ProductsTab />
     </Box>
